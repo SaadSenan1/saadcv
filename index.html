@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saad's CV - Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================================
+       HEADER
+  ================================= -->
+  <header id="header">
+    <div class="logo">Saad's CV</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================================
+       HERO SECTION
+  ================================= -->
+  <section id="hero">
+    <div class="hero-content">
+      <img src="screenshot-1768932492208.png" class="logo23">
+      <h1>Hi, I'm <span>Saad Senan</span></h1>
+      <p>Professional Web Developer</p>
+      <a href="#contact" class="btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ================================
+       ABOUT SECTION
+  ================================= -->
+  <section id="about">
+  <div class="about-container fade-element">
+    <h2>About Me</h2>
+    <p>
+      Hello, my name is Saad Senan, I am 20 years old from syria and I study Computer Engineering.
+      My English skills are good, I am proficient in JavaScript and CSS, and I have experience
+      in multiple projects. I also work on UI/UX design to make applications and websites
+      user-friendly and attractive. I am passionate about learning new skills and always strive
+      to improve myself. Companies and projects I worked with praised the quality and professionalism of my work.
+    </p>
+  </div>
+</section>
+
+  <!-- ================================
+       SERVICES SECTION
+  ================================= -->
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <h3>Web Development</h3>
+        <p>Full-stack web development with modern frameworks and clean code.</p>
+      </div>
+      <div class="service-box">
+        <h3>UI/UX Design</h3>
+        <p>Designing intuitive and beautiful interfaces for websites and apps.</p>
+      </div>
+      <div class="service-box">
+        <h3>Portfolio Websites</h3>
+        <p>Create personal or business portfolios that stand out.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       PORTFOLIO SECTION
+  ================================= -->
+  <section id="portfolio">
+  <h1 class="logf">My Projects</h1>
+  <style>
+
+.logf {
+
+text-align: center;
+color: #01ffd0;
+margin-bottom: 180px;
+
+
+
+
+}
+
+
+  </style>
+  <div class="portfolio-container">
+
+    <!-- Project 1 -->
+    <div class="portfolio-item">
+      <a href="https://cityvapesy.com/" target="_blank">
+        <img src="Screenshot 2026-01-17 223139.png" alt="Project One">
+      </a>
+      <h3>City-Vape Store</h3>
+      <p>Cutting-edge vape store frontend with sleek design, smooth interactions, and responsive layout that captivates users.</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="portfolio-item">
+      <a href="https://saadsenan1.github.io/ADMIN/" target="_blank">
+        <img src="ss.png" alt="Project Two">
+      </a>
+      <h3>SAP-Admin Platform</h3>
+      <p>Modern admin dashboard with charts, responsive layout, and user management features.</p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="portfolio-item">
+      <a href=" https://saadsenan1.github.io/propfirm/" target="_blank">
+        <img src="ss2.png" alt="Project Three">
+      </a>
+      <h3>Forex-Propfirm</h3>
+      <p>An advanced finance platform delivering a seamless user experience and a clear interface for managing investments with ease and professionalism</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ================================
+       CONTACT SECTION
+  ================================= -->
+  <section id="contact">
+  <h2>Let's Work Togather</h2>
+  <div class="contact-icons">
+    <!-- Gmail White Icon -->
+    <a href="mailto:bogamer2006@gmail.com" target="_blank" title="Email">
+      <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email Icon">
+    </a>
+    <!-- WhatsApp White Icon -->
+    <a href="https://wa.me/963996753785" target="_blank" title="WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111728.png" alt="WhatsApp Icon">
+    </a>
+    <!-- LinkedIn White Icon -->
+    <a href="https://www.linkedin.com/in/www.linkedin.com/in/saad-senan-a34557374" target="_blank" title="LinkedIn">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
+    </a>
+  </div>
+</section>
+
+  <!-- ================================
+       FOOTER
+  ================================= -->
+  <footer>
+    <p>&copy; 2026 Saad's CV. All rights reserved.</p>
+  </footer>
+<style>
+
+
+/* ================================
+   GLOBAL STYLES
+================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+p {
+
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+
+}
+body {
+  background-color: #111; /* أسود داكن */
+  color: #ccc;           /* نص رمادي فاتح */
+  line-height: 1.6;
+}
+
+/* ================================
+   HEADER
+================================ */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #111;
+  color: #01ffd0; /* ذهبي */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+#header .logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #01ffd0;
+}
+
+#header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#header nav ul li {
+  margin-left: 25px;
+}
+
+#header nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+#header nav ul li a:hover {
+  color: #01ffd0;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+#hero {
+  height: 100vh;
+  background: linear-gradient(rgba(17,17,17,0.85), rgba(17,17,17,0.85)), url('https://source.unsplash.com/1600x900/?technology,code') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #01ffd0;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  background: #01ffd0;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background: #01ffd0;
+  transform: translateY(-2px);
+}
+
+/* ================================
+   SECTIONS
+================================ */
+section {
+  padding: 100px 20px 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 800;
+  color: #01ffd0;
+}
+
+section p {
+  text-align: center;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  color: #ccc;
+}
+
+/* ================================
+   SERVICES
+================================ */
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-box {
+  background: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.service-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #01ffd0;
+}
+
+.service-box p {
+  color: #ccc;
+}
+
+/* ================================
+   PORTFOLIO
+================================ */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-item {
+  width: 250px;
+  height: 150px;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #01ffd0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+/* ================================
+   CONTACT FORM
+================================ */
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact input, #contact textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #1a1a1a;
+  color: #ccc;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #999;
+}
+
+#contact button {
+  padding: 12px;
+  background: #01ffd0;
+  color: #111;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-icons a img {
+  width: 50px;  /* حجم الأيقونة */
+  height: 50px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.contact-icons a:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+/* ================================
+   ABOUT ME FADE-IN
+================================ */
+.fade-element {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#about {
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #01ffd0; /* ذهبي */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc; /* رمادي */
+  text-align: center;
+}
+/* Portfolio Container */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+/* Individual Project */
+/* -------------------------------
+   Portfolio Item
+---------------------------------*/
+.portfolio-item {
+  width: 250px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s; 
+  background: none;       /* إزالة أي خلفية */
+  box-shadow: none;       /* إزالة أي ظل افتراضي */
+  border-radius: 12px;    /* لو بدك حدود مستديرة خفيفة */
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* ظل الصورة فقط عند hover */
+}
+
+.portfolio-item h3 {
+  color: #01ffd0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.portfolio-item p {
+  color: #ccc;
+  font-size: 14px;
+  margin-top: 5px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;   /* النص مركز */
+}
+/* Responsive Portfolio */
+@media (max-width: 900px) {
+  .portfolio-container {
+    gap: 40px;  /* شوي أصغر إذا الشاشة متوسطة */
+  }
+
+  .portfolio-item {
+    width: 45%;
+    margin-bottom: 50px; /* تباعد عمودي أكبر */
+  }
+}
+
+/* المسافة على الموبايل */
+@media (max-width: 600px) {
+  .portfolio-container {
+    gap: 70px;  
+  }
+
+  .portfolio-item {
+    width: 50%;
+    margin-bottom: 60px; /* تباعد عمودي أكبر على الموبايل */
+  }
+.hero-content h1 {
+
+font-size: 40px;
+
+
+
+
+
+
+}
+  .portfolio-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.logo23{
+
+width: 120px;
+height: 120px;
+margin-bottom: 30px;
+border-radius: 50%;
+object-fit: cover;
+display: block;
+margin: 0 auto 20px auto;
+border: 4px solid aquamarine;
+
+
+}
+
+
+</style>
+<script src="java.js"></script>
+
+</body>
+</html>
