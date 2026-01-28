@@ -95,44 +95,44 @@ margin-bottom: 180px;
   </style>
   <div class="portfolio-container">
 
-    <!-- Project 1 -->
-    <div class="portfolio-item">
-      <a href="https://cityvapesy.com/" target="_blank">
-        <img src="Screenshot 2026-01-17 223139.png" alt="Project One">
-      </a>
-      <h3>City-Vape Store</h3>
-      <p>Cutting-edge vape store frontend with sleek design, smooth interactions, and responsive layout that captivates users.</p>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="portfolio-item">
-      <a href="https://saadsenan1.github.io/ADMIN/" target="_blank">
-        <img src="ss.png" alt="Project Two">
-      </a>
-      <h3>SAP-Admin Platform</h3>
-      <p>Modern admin dashboard with charts, responsive layout, and user management features.</p>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="portfolio-item">
-      <a href=" https://saadsenan1.github.io/propfirm/" target="_blank">
-        <img src="ss2.png" alt="Project Three">
-      </a>
-      <h3>Forex-Propfirm</h3>
-      <p>An advanced finance platform delivering a seamless user experience and a clear interface for managing investments with ease and professionalism</p>
-    </div>
-
+  <!-- Project 1 -->
+  <div class="portfolio-item">
+    <a href="https://cityvapesy.com/" target="_blank">
+      <img src="Screenshot 2026-01-17 223139.png" alt="Project One">
+    </a>
+    <h3>City-Vape Store</h3>
+    <p>Cutting-edge vape store frontend with sleek design, smooth interactions, and responsive layout that captivates users</p>
   </div>
+
+  <!-- Project 2 -->
+  <div class="portfolio-item">
+    <a href="https://saadsenan1.github.io/ADMIN/" target="_blank">
+      <img src="ss.png" alt="Project Two">
+    </a>
+    <h3>SAP-Admin Platform</h3>
+    <p>Modern admin dashboard with charts, responsive layout, and user management features.</p>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="portfolio-item">
+    <a href="https://saadsenan1.github.io/propfirm/" target="_blank">
+      <img src="ss2.png" alt="Project Three">
+    </a>
+    <h3>Forex-Propfirm</h3>
+    <p>An advanced finance platform delivering a seamless user experience and a clear interface for managing investments with ease and professionalism</p>
+  </div>
+
   <!-- Project 4 -->
-<div class="portfolio-item">
-  <a href="https://saadsenan1.github.io/cart/" target="_blank">
-    <img src="ssss3.png" alt="Project Four">
-  </a>
-  <h3>Online Tech Store</h3>
-  <p>A fully responsive e-commerce platform featuring a dynamic
-     shopping cart, product search, and professional checkout flow. Built with HTML, CSS, and JavaScript for seamless user experience across all devices.</p>
+  <div class="portfolio-item">
+    <a href="https://saadsenan1.github.io/cart/" target="_blank">
+      <img src="ssss3.png" alt="Project Four">
+    </a>
+    <h3>Online-Tech Store</h3>
+    <p>A fully responsive e-commerce platform featuring a dynamic
+     shopping cart, product search, and professional checkout flow.</p>
+  </div>
+
 </div>
-</section>
 
   <!-- ================================
        CONTACT SECTION
@@ -335,59 +335,64 @@ section p {
 /* ================================
    PORTFOLIO
 ================================ */
+/* ================================
+   PORTFOLIO SECTION FIX
+================================ */
+
+/* Portfolio Container */
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* المشاريع كلها بالوسط */
-  gap: 40px; /* المسافة بين المشاريع */
-  margin-top: 40px;
+  justify-content: center; /* مشاريع بالوسط */
+  gap: 30px; /* المسافة بين المشاريع */
 }
 
-/* Desktop: 4 مشاريع أفقياً */
+/* Individual Project */
 .portfolio-item {
-  flex: 0 1 calc(25% - 30px); /* 4 مشاريع مع مراعاة الفجوات */
-  text-align: center;
-  cursor: pointer;
+  flex: 0 1 calc(25% - 20px); /* 4 مشاريع بجانب بعض على الكمبيوتر */
+  max-width: 250px; /* تمنع أي تمدد زائد */
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s;
-  background: none;
-  box-shadow: none;
-  border-radius: 12px;
+  text-align: center;
 }
 
-/* Hover effect */
+/* الصور مربعة */
 .portfolio-item img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 250px; /* نفس عرض المشروع */
+  object-fit: cover; /* يملأ المربع بدون تشويه */
   border-radius: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Hover effect */
 .portfolio-item:hover img {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
-/* Medium screens (tablet) - 2 مشاريع أفقياً */
+/* Medium screens - tablet */
 @media (max-width: 900px) {
   .portfolio-item {
-    flex: 0 1 calc(50% - 20px); /* 2 مشاريع مع فجوة */
-    margin-bottom: 40px;
-  }
-}
-
-/* Mobile - 2 مشاريع في عمودين */
-@media (max-width: 600px) {
-  .portfolio-item {
-    flex: 0 1 calc(50% - 15px);
+    flex: 0 1 calc(50% - 15px); /* 2 مشاريع بجانب بعض */
     margin-bottom: 40px;
   }
 
   .portfolio-item img {
-    height: 150px;
+    height: 200px; /* مربعة أصغر */
+  }
+}
+
+/* Small screens - mobile */
+@media (max-width: 600px) {
+  .portfolio-item {
+    flex: 0 1 calc(50% - 15px); /* عمودين */
+    margin-bottom: 40px;
+  }
+
+  .portfolio-item img {
+    height: 180px; /* مربعة على الموبايل */
   }
 
   .portfolio-item p {
